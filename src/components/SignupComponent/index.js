@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';s
 import { Well } from 'react-bootstrap';
 import phoneNumberPropType from 'phone-number-prop-type';
 import {purple_main} from "../../resources/colors";
-import { Button, FormGroup, Label, Input, Row, Col, FormFeedback } from 'reactstrap';
+import { Button, FormGroup, Label, Input, Row, Col, FormFeedback, Alert } from 'reactstrap';
 
 const SignupComponent = props => {
 
@@ -148,6 +148,9 @@ const SignupComponent = props => {
                     </div>
 
                 </FormGroup>
+                <Alert color="primary">
+                    There was an error signing up. Please make sure that the name is greater than 3 characters,email greater than 12 and the password greater than 8
+                </Alert>
             </Well>
         </div>
     );
